@@ -2,6 +2,46 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.hero {
+  background-color: rgb(230, 153, 164);
+  min-height: 100vh;
+  color: white;
+  padding-inline: 150px;
+  padding-top: 30px;
+}
+.hero .hero-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero .hero-header .logo-img {
+  width: 180px;
+}
+.hero .hero-header .contact-link {
+  text-decoration: none;
+  color: rgb(90, 90, 90);
+  font-size: large;
+  font-weight: bold;
+  background-color: white;
+  padding-inline: 30px;
+  padding-block: 10px;
+  border-radius: 5px;
+}
+.hero .hero-content {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+.hero .hero-content .hero-text {
+  width: 50%;
+}
+.hero .hero-content .hero-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 45px;
+  line-height: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

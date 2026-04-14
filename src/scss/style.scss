@@ -1,5 +1,55 @@
+$font-primary: 'Inter', sans-serif;
+$font-secondary: 'Poppins', sans-serif;
+$primary-color: rgb(230, 153, 164);
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: $font-primary;
+}
+
+.hero {
+    background-color: $primary-color;
+    min-height: 100vh;
+    color: white;
+    padding-inline: 150px;
+    padding-top: 30px;
+
+    .hero-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo-img {
+            width: 180px;
+        }
+
+        .contact-link {
+            text-decoration: none;
+            color: rgb(90, 90, 90);
+            font-size: large;
+            font-weight: bold;
+            background-color: white;
+            padding-inline: 30px;
+            padding-block: 10px;
+            border-radius: 5px;
+        }
+    }
+
+    .hero-content {
+        display: flex;
+        margin-top: 50px;
+        justify-content: space-between;
+
+        .hero-text {
+            width: 50%;
+        }
+
+        .hero-title{
+            font-family: $font-secondary;
+            font-size: 45px;
+            line-height: 50px;
+        }
+    }
 }
