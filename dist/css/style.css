@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+.hero {
+  background-color: rgb(230, 153, 164);
+  min-height: 100vh;
+  color: white;
+  padding-inline: 200px;
+  padding-top: 30px;
+}
+.hero .hero-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero .hero-header .logo-img {
+  width: 180px;
+}
+.hero .hero-header .contact-link {
+  text-decoration: none;
+  color: rgb(90, 90, 90);
+  font-size: large;
+  font-weight: bold;
+  background-color: white;
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+.hero .hero-content {
+  display: flex;
+  margin-top: 70px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.hero .hero-text {
+  width: 60%;
+}
+.hero .hero-form-container {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+}
+.hero .hero-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 45px;
+  line-height: 50px;
+}
+.hero .hero-subtitle {
+  margin-top: 20px;
+}
+.hero .form {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: rgb(90, 90, 90);
+  align-items: center;
+  padding: 30px;
+  width: 75%;
+  border-radius: 10px;
+  gap: 15px;
+  animation: scaleIn 0.6s ease forwards;
+}
+.hero .form .form-title {
+  font-weight: bold;
+  font-size: large;
+  margin-bottom: 10px;
+}
+.hero .form input,
+.hero .form textarea {
+  width: 90%;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid rgb(90, 90, 90);
+}
+.hero .form textarea {
+  height: 100px;
+  resize: none;
+}
+.hero .form button {
+  width: 90%;
+  padding: 10px;
+  background-color: rgb(90, 90, 90);
+  color: white;
+  font-size: medium;
+  box-shadow: 5px 5px 5px rgb(160, 160, 160);
+  margin-top: 10px;
+}
+
+.about {
+  min-height: 40vh;
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 200px;
+}
+.about .products-img {
+  width: 450px;
+  border-radius: 10px;
+}
+.about .about-text {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: rgb(90, 90, 90);
+}
+.about .about-title {
+  font-family: "Poppins", sans-serif;
+}
+
+.services {
+  min-height: 100vh;
+  background-color: rgb(230, 153, 164);
+  padding: 80px 200px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 60px;
+}
+.services .services-benefits {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+.services .services-benefits img {
+  width: 40px;
+}
+.services .services-title {
+  font-family: "Poppins", sans-serif;
+}
+.services .benefit {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.services .benefit-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.services button {
+  background-color: white;
+  width: 30%;
+  padding: 12px 10px;
+  color: rgb(90, 90, 90);
+  font-size: medium;
+}
+
+.faq {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 200px 80px 200px;
+  color: rgb(90, 90, 90);
+  align-items: center;
+  gap: 40px;
+}
+.faq .faq-title {
+  font-family: "Poppins", sans-serif;
+}
+.faq .faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.faq .faq-question {
+  border: 1px solid rgb(90, 90, 90);
+  padding: 15px 50px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+.faq .faq-question:hover {
+  cursor: pointer;
+}
+
+.cta {
+  min-height: 60vh;
+  background-color: rgb(230, 153, 164);
+  color: white;
+  padding: 60px 200px 60px 200px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.cta .cta-title {
+  font-family: "Poppins", sans-serif;
+  line-height: 35px;
+  margin-bottom: 10px;
+  font-size: 35px;
+}
+.cta .cta-card {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: rgb(90, 90, 90);
+  align-items: center;
+  padding: 40px 60px;
+  gap: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+.cta button {
+  background-color: rgb(90, 90, 90);
+  width: 90%;
+  padding: 16px;
+  color: white;
+  font-size: medium;
+}
+.cta .cta-note {
+  font-size: small;
+}
+
+.footer {
+  min-height: 20vh;
+  background-color: rgb(228, 99, 118);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 20px;
+  font-size: small;
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.fade-up.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 1024px) {
+  .hero,
+  .about,
+  .services,
+  .cta {
+    padding-inline: 80px;
+  }
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+  .cta .cta-card {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .hero .hero-form-container {
+    width: 100%;
+    margin-bottom: 60px;
+    justify-content: center;
+  }
+  .hero .hero-text {
+    width: 100%;
+  }
+  .hero .hero-header .contact-link {
+    font-size: medium;
+  }
+  .hero .hero-header .logo-img {
+    width: 140px;
+  }
+  .hero .hero-content,
+  .cta {
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+  }
+  .hero .form {
+    width: 80%;
+    max-width: 500px;
+  }
+  .about {
+    padding: 50px;
+    gap: 20px;
+  }
+  .about .about-text {
+    width: 70%;
+  }
+  .services .services-title {
+    text-align: center;
+    font-size: 30px;
+  }
+  .services .services-benefits {
+    grid-template-columns: 1fr;
+  }
+  .services button {
+    width: 60%;
+  }
+  .faq {
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .hero {
+    padding-inline: 50px;
+  }
+  .hero .hero-header {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .hero .hero-title {
+    font-size: 30px;
+  }
+  .cta {
+    padding-inline: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

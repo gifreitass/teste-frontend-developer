@@ -1,58 +1,59 @@
-# Teste para estágio Frontend e Full-Stack
+# Landing page - Presentes personalizados
 
-## Sobre a Ellos Design
+## 📌 Sobre o projeto
 
-A **Ellos Design** é uma agência de marketing e criação de sites localizada em Guarulhos / SP. Somos uma empresa em constante evolução e sempre estamos abertos para pessoas que gostem de tecnologia e queiram trabalhar na área, mas que principalmente queiram aprender e crescer com a nossa empresa.
+Este projeto consiste em uma landing page desenvolvida com foco na recomendação de presentes personalizados.
 
-## Sobre o teste
+A proposta é oferecer uma experiência simples e intuitiva, onde o usuário preenche um formulário e recebe sugestões de presentes ideais de acordo com a ocasião e perfil da pessoa presenteada.
 
-Este é um teste prático que desenvolvemos para a avaliação dos candidatos participantes de nosso processo seletivo para vagas de Frontend ou Full-Stack.
-
-## Tecnologias para o desafio
-
-Você deve utilizar as seguintes tecnologias para o desenvolvimento do teste:
+## 🚀 Tecnologias utilizadas
 
 - HTML5
-- CSS
-- JavaScript ou jQuery
-- PHP (Para Full-Stack)
-- MySQL (Para Full-Stack)
+- SCSS (Sass)
+- JavaScript
 
-## O que nos impressionaria no teste
+## ⚙️ Como executar o projeto
 
-- Utilização de um pré-processador para o CSS (De preferência o Sass)
-- Aplicação de animações em CSS (Ex: Animações ao realizar scroll)
-- Ver o teste rodando em live (Bucket estático S3, Heroku, Firebase Hosting, etc)
-- Documentação do projeto (Com instruções para executar)
+### 1. Clonar o repositório
 
-## O que avaliaremos no seu teste
+```bash
+git clone https://github.com/gifreitass/teste-frontend-developer.git
+```
 
-- Criatividade
-- Organização do código
-- Performance do código
-- Boas práticas de desenvolvimento
-- Documentação do código
-- Adaptação mobile (layout responsivo)
-- Documentação do projeto (Com instruções para executar)
+### 2. Acessar a pasta
 
-## Etapas para realização do teste
+```bash
+cd teste-frontend-developer
+```
 
-- Faça um [fork](https://github.com/Ellos-Design/teste-frontend-developer/fork) desse projeto em sua conta do GitHub
-- Realize o desafio proposto
-- Faça um push para seu repositório com o desafio implementado
-- Envie um email para (vagas@ellosdesign.com.br) com a URL do seu projeto avisando que você concluiu o teste
+### 3. Instalar dependências
 
-## O desafio
+```bash
+npm install
+```
 
-Você deverá desenvolver uma landing page seguindo a estrutura exibida na imagem abaixo. Você pode utilizar os textos e imagens de sua preferência para a criação da página.
+### 4. Rodar o projeto
 
-#### Full-Stack
+```bash
+npm run dev
+```
 
-Deixar o formulário da landing page funcional, onde ao preencher as informações e clicar para enviar, o formulário será submetido e os dados deverão ser gravados em um banco de dados (Neste caso será necessário nos enviar o arquivo SQL para podermos implementar o banco para avaliação do teste).
+👉 Esse comando compila automaticamente os arquivos SCSS para CSS.
 
-> [!IMPORTANT]
-> Atenção: O mockup abaixo é apenas um esqueleto estrutural. Não queremos que você replique o design cinza e estático do modelo. Use sua criatividade para definir uma marca fictícia (ou real), escolher uma paleta de cores, tipografia e imagens que deem vida ao projeto. Sinta-se livre para adaptar o layout, desde que mantenha os elementos essenciais.
+## 🎯 Funcionalidades
 
-![Template da página a ser desenvolvida](https://github.com/Ellos-Design/teste-frontend-developer/blob/master/wireframe.png?raw=true)
+- Layout responsivo
+- Animações ao scroll
+- Formulário de recomendação (simulado)
+- Estrutura semântica com HTML5
 
-**Boa sorte! Use sua criatividade e mostre do que você é capaz.**
+## 💡 Decisões de desenvolvimento
+
+- Utilização do SCSS para melhor organização e reutilização de estilos
+- Separação de responsabilidades entre layout e componentes
+- Animações suaves para melhorar a experiência do usuário
+
+## 🌐 Projeto em produção
+
+O projeto pode ser acessado através do link:
+👉 https://gifreitass.github.io/teste-frontend-developer/

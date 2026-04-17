@@ -1,0 +1,400 @@
+$font-primary: 'Inter', sans-serif;
+$font-secondary: 'Poppins', sans-serif;
+$primary-color: rgb(230, 153, 164);
+$secondary-color: rgb(90, 90, 90);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-primary;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: $font-secondary;
+    cursor: pointer;
+}
+
+.hero {
+    background-color: $primary-color;
+    min-height: 100vh;
+    color: white;
+    padding-inline: 200px;
+    padding-top: 30px;
+
+    .hero-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo-img {
+            width: 180px;
+        }
+
+        .contact-link {
+            text-decoration: none;
+            color: $secondary-color;
+            font-size: large;
+            font-weight: bold;
+            background-color: white;
+            padding: 10px 30px;
+            border-radius: 5px;
+        }
+    }
+
+    .hero-content {
+        display: flex;
+        margin-top: 70px;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .hero-text {
+        width: 60%;
+    }
+
+    .hero-form-container {
+        width: 40%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .hero-title {
+        font-family: $font-secondary;
+        font-size: 45px;
+        line-height: 50px;
+    }
+
+    .hero-subtitle {
+        margin-top: 20px;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        color: $secondary-color;
+        align-items: center;
+        padding: 30px;
+        width: 75%;
+        border-radius: 10px;
+        gap: 15px;
+        animation: scaleIn 0.6s ease forwards;
+
+        .form-title {
+            font-weight: bold;
+            font-size: large;
+            margin-bottom: 10px;
+        }
+
+        input,
+        textarea {
+            width: 90%;
+            padding: 10px;
+            border-radius: 3px;
+            border: 1px solid $secondary-color;
+        }
+
+        textarea {
+            height: 100px;
+            resize: none;
+        }
+
+        button {
+            width: 90%;
+            padding: 10px;
+            background-color: $secondary-color;
+            color: white;
+            font-size: medium;
+            box-shadow: 5px 5px 5px rgb(160, 160, 160);
+            margin-top: 10px;
+        }
+    }
+}
+
+.about {
+    min-height: 40vh;
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 200px;
+
+    .products-img {
+        width: 450px;
+        border-radius: 10px;
+    }
+
+    .about-text {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        color: $secondary-color;
+    }
+
+    .about-title {
+        font-family: $font-secondary;
+    }
+}
+
+.services {
+    min-height: 100vh;
+    background-color: $primary-color;
+    padding: 80px 200px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 60px;
+
+    .services-benefits {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+
+        img {
+            width: 40px;
+        }
+    }
+
+    .services-title {
+        font-family: $font-secondary;
+    }
+
+    .benefit {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .benefit-text {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    button {
+        background-color: white;
+        width: 30%;
+        padding: 12px 10px;
+        color: $secondary-color;
+        font-size: medium;
+    }
+}
+
+.faq {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 200px 80px 200px;
+    color: $secondary-color;
+    align-items: center;
+    gap: 40px;
+
+    .faq-title {
+        font-family: $font-secondary;
+    }
+
+    .faq-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .faq-question {
+        border: 1px solid $secondary-color;
+        padding: 15px 50px;
+        border-radius: 5px;
+        font-weight: 500;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.cta {
+    min-height: 60vh;
+    background-color: $primary-color;
+    color: white;
+    padding: 60px 200px 60px 200px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    .cta-title {
+        font-family: $font-secondary;
+        line-height: 35px;
+        margin-bottom: 10px;
+        font-size: 35px;
+    }
+
+    .cta-card {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        color: $secondary-color;
+        align-items: center;
+        padding: 40px 60px;
+        gap: 30px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    button {
+        background-color: $secondary-color;
+        width: 90%;
+        padding: 16px;
+        color: white;
+        font-size: medium;
+    }
+
+    .cta-note {
+        font-size: small;
+    }
+}
+
+.footer {
+    min-height: 20vh;
+    background-color: rgb(228, 99, 118);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 20px;
+    font-size: small;
+}
+
+//animação do formulário
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+//animação ao fazer scroll
+.fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.fade-up.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+//responsividade tablet
+@media (max-width: 1024px) {
+
+    .hero,
+    .about,
+    .services,
+    .cta {
+        padding-inline: 80px;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cta .cta-card {
+        width: 90%;
+    }
+}
+
+//responsividade mobile
+@media (max-width: 768px) {
+    .hero .hero-form-container {
+        width: 100%;
+        margin-bottom: 60px;
+        justify-content: center;
+    }
+
+    .hero .hero-text {
+        width: 100%;
+    }
+
+    .hero .hero-header .contact-link {
+        font-size: medium;
+    }
+
+    .hero .hero-header .logo-img {
+        width: 140px;
+    }
+
+    .hero .hero-content,
+    .cta {
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .hero .form {
+        width: 80%;
+        max-width: 500px;
+    }
+
+    .about {
+        padding: 50px;
+        gap: 20px;
+    }
+
+    .about .about-text {
+        width: 70%;
+    }
+
+    .services .services-title {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .services .services-benefits {
+        grid-template-columns: 1fr;
+    }
+
+    .services button {
+        width: 60%;
+    }
+
+    .faq {
+        text-align: center;
+    }
+
+}
+
+
+//responsividade small mobile
+@media (max-width: 480px) {
+    .hero {
+        padding-inline: 50px;
+    }
+
+    .hero .hero-header {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .hero .hero-title {
+        font-size: 30px;
+    }
+
+    .cta {
+        padding-inline: 20px;
+    }
+}
